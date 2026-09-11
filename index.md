@@ -5,7 +5,10 @@ hide: true
 show_reading_time: false
 ---
 
-Hi! My name is Darshan Sivashankar
+<p style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 1.05rem; margin-bottom: 0;">
+    <span style="background-color: var(--orange); color: #1a1a1a; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; white-space: nowrap;">Into Hardware</span>
+    <span>Hi! My name is <strong>Darshan Sivashankar</strong></span>
+</p>
 
 10th grade, Class of 2028, Del Norte High School, San Diego. I write Java and Python day to day, I'm learning Verilog through a UC San Diego course, and I'm working toward becoming a VLSI Hardware Engineer.
 
