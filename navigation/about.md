@@ -58,7 +58,7 @@ Weightlifting, mostly. And staying connected to Tamil culture, which is less a h
 
 ### Where I'm headed
 
-Right now that means Verilog and digital logic fundamentals. Longer term, it means becoming a VLSI Hardware Engineer, someone who designs the chips instead of just the code running on top of them.
+Verilog now, VLSI later. The full story is on the [Why VLSI]({{site.baseurl}}/why-vlsi) page.
 
 ### Connect
 

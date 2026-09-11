@@ -87,6 +87,9 @@ show_reading_time: false
     <a href="https://www.linkedin.com/in/darshan-s-94b0593b3/" class="pill" style="border: 1px solid #0a66c2; color: #4a9eff;">
         LinkedIn
     </a>
+    <a href="{{site.baseurl}}/about" class="pill" style="border: 1px solid var(--teal); color: var(--teal);">
+        About Me
+    </a>
 </div>
 
 ### My Projects
@@ -109,7 +112,7 @@ show_reading_time: false
            OCS Mentor Feature
         </div>
     </a>
-    <a href="{{site.baseurl}}/about">
+    <a href="{{site.baseurl}}/why-vlsi">
         <div class="card" style="background-color: var(--orange); color: white;">
            Why VLSI
         </div>
