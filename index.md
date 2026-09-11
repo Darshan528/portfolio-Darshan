@@ -80,3 +80,21 @@ Hi! My name is Darshan Sivashankar
 </div>
 
 <br>
+
+### A Few More
+
+> Odds and ends I've built that are still kicking around on this site.
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <a href="{{site.baseurl}}/scorepredictor.html" class="btn" style="background-color: var(--warn);">
+        Score Predictor
+    </a>
+    <a href="{{site.baseurl}}/exercisegraphs" class="btn" style="background-color: var(--accent);">
+        Exercise Graphs
+    </a>
+    <a href="{{site.baseurl}}/turtle" class="btn" style="background-color: var(--red);">
+        Turtle RPG
+    </a>
+</div>
+
+<br>
