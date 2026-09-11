@@ -5,134 +5,42 @@ permalink: /about/
 comments: true
 ---
 
-## As a conversation Starter
+## About Me
 
-Here are some places I have lived.
+I'm Darshan Sivashankar, a 10th grader at Del Norte High School in San Diego, Class of 2028. My family's from Tamil Nadu in India, and I grew up splitting time between India and California, which is a big part of why Tamil culture still matters to me even while I'm doing very California-teenager things like coding and lifting weights.
 
-<comment>
-Flags are made using Wikipedia images
-</comment>
+I got into computer science through coursework, mostly Java and Python, and that's still what I use most days. But lately I've been taking a Verilog course through UC San Diego, and that's pointed me toward what I actually want to do long term: VLSI, designing hardware instead of just writing software that runs on it.
 
-<style>
-    /* Style looks pretty compact, 
-       - grid-container and grid-item are referenced the code 
-    */
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamic columns */
-        gap: 10px;
-    }
-    .grid-item {
-        text-align: center;
-    }
-    .grid-item img {
-        width: 100%;
-        height: 100px; /* Fixed height for uniformity */
-        object-fit: contain; /* Ensure the image fits within the fixed height */
-    }
-    .grid-item p {
-        margin: 5px 0; /* Add some margin for spacing */
-    }
+### What I work on
 
-    .image-gallery {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 10px;
-        }
+I split my time across a few real projects, not just class assignments:
 
-    .image-gallery img {
-        max-height: 150px;
-        object-fit: cover;
-        border-radius: 5px;
-    }
-</style>
+**UESL (Unified Esports League)** — a nonprofit that makes esports accessible to people with intellectual and developmental disabilities. My team (Sathwik Kintada, Rudra B Joshi, and me) built the UESL Foundation platform as a CSP capstone: an AI chatbot, an accessible game engine, and a social hub, all backed by a shared user system. It's live at [ueslhub.opencodingsociety.com](https://ueslhub.opencodingsociety.com).
 
-<!-- This grid_container class is used by CSS styling and the id is used by JavaScript connection -->
-<div class="grid-container" id="grid_container">
-    <!-- content will be added here by JavaScript -->
-</div>
+**Open Coding Society** — I wrote the mentor-interest signup backend for OCS's Spring/Java platform: the entity, the JPA repository, and the API controller that stores who's asked to become a mentor.
 
-<script>
-    // 1. Make a connection to the HTML container defined in the HTML div
-    var container = document.getElementById("grid_container"); // This container connects to the HTML div
+**San Diego Tamil Sangam (SDTS)** — I help keep sdts.org and its Bharathiyar Tamil School subsite running, from content updates to setting up automated SSL certificate renewal so the site doesn't break every 90 days.
 
-    // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
-    var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
-    var living_in_the_world = [
-        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - forever"},
-        {"flag": "b/b9/Flag_of_Oregon.svg", "greeting": "Hi", "description": "Oregon - 9 years"},
-        {"flag": "b/be/Flag_of_England.svg", "greeting": "Alright mate", "description": "England - 2 years"},
-        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - 2 years"},
-    ];
+Outside of those, most of the smaller pages on this site (Exam Predictor, Grade Predictor, Study Tracker, Snake) came out of class projects I kept around because I actually liked how they turned out.
 
-    // 3a. Consider how to update style count for size of container
-    // The grid-template-columns has been defined as dynamic with auto-fill and minmax
+### Outside of code
 
-    // 3b. Build grid items inside of our container for each row of data
-    for (const location of living_in_the_world) {
-        // Create a "div" with "class grid-item" for each row
-        var gridItem = document.createElement("div");
-        gridItem.className = "grid-item";  // This class name connects the gridItem to the CSS style elements
-        // Add "img" HTML tag for the flag
-        var img = document.createElement("img");
-        img.src = http_source + location.flag; // concatenate the source and flag
-        img.alt = location.flag + " Flag"; // add alt text for accessibility
+Weightlifting, mostly. And staying connected to Tamil culture, which is less a hobby than just part of how I grew up.
 
-        // Add "p" HTML tag for the description
-        var description = document.createElement("p");
-        description.textContent = location.description; // extract the description
+### Where I'm headed
 
-        // Add "p" HTML tag for the greeting
-        var greeting = document.createElement("p");
-        greeting.textContent = location.greeting;  // extract the greeting
+Right now that means Verilog and digital logic fundamentals. Longer term, it means becoming a VLSI Hardware Engineer, someone who designs the chips instead of just the code running on top of them.
 
-        // Append img and p HTML tags to the grid item DIV
-        gridItem.appendChild(img);
-        gridItem.appendChild(description);
-        gridItem.appendChild(greeting);
+### Connect
 
-        // Append the grid item DIV to the container DIV
-        container.appendChild(gridItem);
-    }
-</script>
-
-### Journey through Life
-
-Here is what I did at those places
-
-- 🏫 Lots of Elementary Schools in Tucson, LA, Honolulu, and Glendale (CA)
-- 🏫 Middle and High School in Glendale (CA), Hoover High graduated '77
-- 🎓 Glendale CA Community College, UCLA Extension, LA Wilshire Computer Tech School '77 to '79
-- ⛪ England, London Missionary for Church of Jesus Christ of Latter-day Saints '79 to '81
-- 💼 Culver City, Glendale CA founder at Ashton-Tate, original PC's dBase 2 and 3 '82 to '87
-- 🎓 Eugene Oregon Undergraduate CompSci Degree at University of Oregon (Go Ducks!) '89 to '91
-- 💼 Eugene Oregon, founder and owner @ Microniche `88, Point Control CAD CAM developer '91 to '96
-- 🏢 San Diego CA Qualcomm, Satellite Comm and 1st Mobile OS (BREW) '96 to '19
-- 👨‍🏫 San Diego CA Teacher of Computer Science @ Del Norte High School San Diego '19 to present
-
-### Culture, Family, and Fun
-
-Everything for me, as for many others, revolves around family and faith.
-
-- My mother told me that I was Danish, English. and Irish, here is my researched [family tree]({{site.baseurl}}/images/about/familytree.png)
-- My family is pretty big as I have been married twice, my 1st wife passed away.  We have had 5 kids, 4 adopted by me, 1 biological.  Plus, there are three grandkids.  My name to my grandkids is Abuilito.
-- The gallery of pics has some of my family, fun, culture and faith memories.
-
-<comment>
-Gallery of Pics, scroll to the right for more ...
-</comment>
-<div class="image-gallery">
-  <img src="{{site.baseurl}}/images/about/missionary.jpg" alt="Image 1">
-  <img src="{{site.baseurl}}/images/about/john_tamara.jpg" alt="Image 2">
-  <img src="{{site.baseurl}}/images/about/tamara_fam.jpg" alt="Image 3">
-  <img src="{{site.baseurl}}/images/about/surf.jpg" alt="Image 4">
-  <img src="{{site.baseurl}}/images/about/john_lora.jpg" alt="Image 5">
-  <img src="{{site.baseurl}}/images/about/lora_fam.jpg" alt="Image 6">
-  <img src="{{site.baseurl}}/images/about/lora_fam2.jpg" alt="Image 7">
-  <img src="{{site.baseurl}}/images/about/pj_party.jpg" alt="Image 8">
-  <img src="{{site.baseurl}}/images/about/trent_family.png" alt="Image 9">
-  <img src="{{site.baseurl}}/images/about/claire.jpg" alt="Image 10">
-  <img src="{{site.baseurl}}/images/about/grandkids.jpg" alt="Image 11">
-  <img src="{{site.baseurl}}/images/about/farm.jpg" alt="Image 12">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+    <a href="https://github.com/Darshan528" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid #FFF; border-radius: 6px; font-weight: 700;">
+        <svg style="width: 16px; height: 16px; fill: currentColor;" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/darshan-s-94b0593b3/" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid #0a66c2; border-radius: 6px; font-weight: 700; color: #4a9eff;">
+        LinkedIn
+    </a>
 </div>
